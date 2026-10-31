@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Merge the two result files, print the tables used in the write-up, and draw the figure."""
-import json, numpy as np, sys
+import json, numpy as np, sys, os
+os.makedirs('results', exist_ok=True)
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -26,7 +27,7 @@ for xi in r['limits']:
         for N, v in r['limits'][xi][m].items():
             if (res['limits'][xi][m].get(N) is None or not np.isfinite(res['limits'][xi][m][N])) and v is not None and np.isfinite(v):
                 res['limits'][xi][m][N] = v
-json.dump(res, open('stacking_results_merged.json', 'w'), indent=1)
+json.dump(res, open('results/stacking_results_merged.json', 'w'), indent=1)
 
 METHODS = ['cc_lin', 'trad_lin', 'ing_lin', 'trad_nl', 'ing_nl', 'df']
 N_ALL = res['N_all']; NB = res['N_boot']
@@ -75,9 +76,9 @@ for xi in [1e-2, 1e-3, 1e-4, 1.0]:
     a = val(xi, 'cc_lin', 10); b = val(xi, 'cc_lin', 100000)
     print(f'xi={xi:g}: ({b:.2f} - {a:.2f})/4 = {(b-a)/4:.3f}')
 
-json.dump(rows_out, open('stacking_table.json', 'w'), indent=1)
+json.dump(rows_out, open('results/stacking_table.json', 'w'), indent=1)
 import csv
-with open('stacking_table.csv', 'w', newline='') as fh:
+with open('results/stacking_table.csv', 'w', newline='') as fh:
     w = csv.DictWriter(fh, fieldnames=list(rows_out[0].keys())); w.writeheader(); w.writerows(rows_out)
 
 # ---------------- figure
@@ -115,6 +116,6 @@ for ax in axes[0]:
         pass
 fig.suptitle('Per-segment kurtosis gain under three ways of combining segments (synthetic, Gaussian noise, rev2 signal model)', fontsize=10)
 fig.tight_layout()
-fig.savefig('stacking_gain_vs_duration.png', dpi=170)
-fig.savefig('stacking_gain_vs_duration.pdf')
+fig.savefig('results/stacking_gain_vs_duration.png', dpi=170)
+fig.savefig('results/stacking_gain_vs_duration.pdf')
 print('figure written')

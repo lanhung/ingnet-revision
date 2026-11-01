@@ -1,0 +1,70 @@
+{
+  "pp_all": {
+    "ai_log10Omega_max_dev": 0.039000000000000035,
+    "ai_log10Omega_KS_p": 0.06742457300424576,
+    "ai_log10xi_max_dev": 0.01999999999999999,
+    "ai_log10xi_KS_p": 0.6566397547721863,
+    "tr_log10Omega_max_dev": 0.030000000000000027,
+    "tr_log10Omega_KS_p": 0.2212953120470047,
+    "tr_log10xi_max_dev": 0.017000000000000015,
+    "tr_log10xi_KS_p": 0.8962944149971008,
+    "n": 1000
+  },
+  "pp_xi_lt_1e-2": {
+    "ai_log10Omega_max_dev": 0.049000000000000016,
+    "ai_log10Omega_KS_p": 0.01062307320535183,
+    "ai_log10xi_max_dev": 0.395,
+    "ai_log10xi_KS_p": 0.0,
+    "tr_log10Omega_max_dev": 0.124,
+    "tr_log10Omega_KS_p": 4.451127983448426e-14,
+    "tr_log10xi_max_dev": 0.605,
+    "tr_log10xi_KS_p": 0.0,
+    "n": 1000
+  },
+  "null": {
+    "n_segments": 200,
+    "non_overlapping": true,
+    "kurtosis_abs_median": 0.03957223519682884,
+    "ai_mean": -4.699155330657959,
+    "ai_std": 0.2237618863582611,
+    "tr_mean": -4.334290981292725,
+    "tr_std": 0.34306785464286804,
+    "fr_mean": -4.576696872711182,
+    "fr_std": 0.24968771636486053,
+    "dpaired_tr_minus_ai": 0.36486420035362244,
+    "dpaired_tr_minus_ai_ci68": [
+      0.33829572796821594,
+      0.39067718386650085
+    ],
+    "dpaired_tr_minus_ai_p": 2.1235107964553686e-30,
+    "dpaired_fr_minus_ai": 0.1224585473537445,
+    "dpaired_fr_minus_ai_ci68": [
+      0.09793136268854141,
+      0.14915497601032257
+    ],
+    "dpaired_fr_minus_ai_p": 2.3288107513508294e-06,
+    "dpaired_fr_minus_tr": -0.24240566790103912,
+    "dpaired_fr_minus_tr_ci68": [
+      -0.2767143249511719,
+      -0.2082650065422058
+    ],
+    "dpaired_fr_minus_tr_p": 2.1472911990172427e-11
+  },
+  "recovery": {
+    "ai_corr": 0.9493249877363221,
+    "tr_corr": 0.4126691115468443,
+    "log10Omega_range": [
+      -4.0,
+      -2.0
+    ]
+  },
+  "corner": {
+    "xi": 0.05,
+    "log10Omega": -3.0
+  },
+  "sampling_stats": {
+    "calls": 11,
+    "min_accept_rate": 0.08333333333333333,
+    "n_underfilled_obs": 0
+  }
+}

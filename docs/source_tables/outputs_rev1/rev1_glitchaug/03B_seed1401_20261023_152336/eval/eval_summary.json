@@ -1,0 +1,70 @@
+{
+  "pp_all": {
+    "ai_log10Omega_max_dev": 0.030999999999999917,
+    "ai_log10Omega_KS_p": 0.25202804803848267,
+    "ai_log10xi_max_dev": 0.03300000000000003,
+    "ai_log10xi_KS_p": 0.16848276555538177,
+    "tr_log10Omega_max_dev": 0.02400000000000002,
+    "tr_log10Omega_KS_p": 0.5002655386924744,
+    "tr_log10xi_max_dev": 0.020000000000000018,
+    "tr_log10xi_KS_p": 0.8108952641487122,
+    "n": 1000
+  },
+  "pp_xi_lt_1e-2": {
+    "ai_log10Omega_max_dev": 0.05199999999999999,
+    "ai_log10Omega_KS_p": 0.004533449187874794,
+    "ai_log10xi_max_dev": 0.38699999999999996,
+    "ai_log10xi_KS_p": 0.0,
+    "tr_log10Omega_max_dev": 0.09300000000000008,
+    "tr_log10Omega_KS_p": 1.7928808659917195e-08,
+    "tr_log10xi_max_dev": 0.597,
+    "tr_log10xi_KS_p": 0.0,
+    "n": 1000
+  },
+  "null": {
+    "n_segments": 200,
+    "non_overlapping": true,
+    "kurtosis_abs_median": 0.03957223519682884,
+    "ai_mean": -4.702662944793701,
+    "ai_std": 0.2644061744213104,
+    "tr_mean": -4.5253448486328125,
+    "tr_std": 0.21862995624542236,
+    "fr_mean": -4.374003887176514,
+    "fr_std": 0.2848154902458191,
+    "dpaired_tr_minus_ai": 0.17731770873069763,
+    "dpaired_tr_minus_ai_ci68": [
+      0.15744641423225403,
+      0.1970820277929306
+    ],
+    "dpaired_tr_minus_ai_p": 4.938768006380455e-16,
+    "dpaired_fr_minus_ai": 0.32865890860557556,
+    "dpaired_fr_minus_ai_ci68": [
+      0.30479785799980164,
+      0.3529907464981079
+    ],
+    "dpaired_fr_minus_ai_p": 4.718243988155377e-30,
+    "dpaired_fr_minus_tr": 0.15134115517139435,
+    "dpaired_fr_minus_tr_ci68": [
+      0.13075052201747894,
+      0.17240941524505615
+    ],
+    "dpaired_fr_minus_tr_p": 7.945012703292065e-12
+  },
+  "recovery": {
+    "ai_corr": 0.9599037859086161,
+    "tr_corr": 0.5535918621399548,
+    "log10Omega_range": [
+      -4.0,
+      -2.0
+    ]
+  },
+  "corner": {
+    "xi": 0.05,
+    "log10Omega": -3.0
+  },
+  "sampling_stats": {
+    "calls": 11,
+    "min_accept_rate": 0.125,
+    "n_underfilled_obs": 0
+  }
+}

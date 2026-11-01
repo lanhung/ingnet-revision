@@ -1,0 +1,70 @@
+{
+  "pp_all": {
+    "ai_log10Omega_max_dev": 0.05600000000000005,
+    "ai_log10Omega_KS_p": 0.00289100781083107,
+    "ai_log10xi_max_dev": 0.027000000000000024,
+    "ai_log10xi_KS_p": 0.40574535727500916,
+    "tr_log10Omega_max_dev": 0.039000000000000035,
+    "tr_log10Omega_KS_p": 0.07933928817510605,
+    "tr_log10xi_max_dev": 0.049000000000000044,
+    "tr_log10xi_KS_p": 0.013011887669563293,
+    "n": 1000
+  },
+  "pp_xi_lt_1e-2": {
+    "ai_log10Omega_max_dev": 0.041999999999999926,
+    "ai_log10Omega_KS_p": 0.048110634088516235,
+    "ai_log10xi_max_dev": 0.38599999999999995,
+    "ai_log10xi_KS_p": 0.0,
+    "tr_log10Omega_max_dev": 0.11199999999999999,
+    "tr_log10Omega_KS_p": 5.611353829509946e-12,
+    "tr_log10xi_max_dev": 0.589,
+    "tr_log10xi_KS_p": 0.0,
+    "n": 1000
+  },
+  "null": {
+    "n_segments": 200,
+    "non_overlapping": true,
+    "kurtosis_abs_median": 0.03612470626831055,
+    "ai_mean": -4.764139652252197,
+    "ai_std": 0.257865309715271,
+    "tr_mean": -4.626774787902832,
+    "tr_std": 0.24054691195487976,
+    "fr_mean": -4.606517791748047,
+    "fr_std": 0.26700329780578613,
+    "dpaired_tr_minus_ai": 0.13736465573310852,
+    "dpaired_tr_minus_ai_ci68": [
+      0.11864118278026581,
+      0.15621910989284515
+    ],
+    "dpaired_tr_minus_ai_p": 1.646991137221887e-12,
+    "dpaired_fr_minus_ai": 0.15762202441692352,
+    "dpaired_fr_minus_ai_ci68": [
+      0.13564999401569366,
+      0.18061909079551697
+    ],
+    "dpaired_fr_minus_ai_p": 8.85695267127673e-11,
+    "dpaired_fr_minus_tr": 0.020257363095879555,
+    "dpaired_fr_minus_tr_ci68": [
+      0.0020555146038532257,
+      0.03931155800819397
+    ],
+    "dpaired_fr_minus_tr_p": 0.26604923605918884
+  },
+  "recovery": {
+    "ai_corr": 0.9578157709132652,
+    "tr_corr": 0.544748798620584,
+    "log10Omega_range": [
+      -4.0,
+      -2.0
+    ]
+  },
+  "corner": {
+    "xi": 0.05,
+    "log10Omega": -3.0
+  },
+  "sampling_stats": {
+    "calls": 11,
+    "min_accept_rate": 0.25,
+    "n_underfilled_obs": 0
+  }
+}

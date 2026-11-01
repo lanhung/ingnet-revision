@@ -1,0 +1,98 @@
+{
+  "runs": [
+    {
+      "run": "outputs_rev1/rev1_glitchaug/03A_seed1400_20261023_141519",
+      "npz": "outputs_rev1/probe_figdata/rev1_glitchaug_03A_seed1400.npz",
+      "dataset": "03A",
+      "seed": 1400,
+      "eval_noise_fingerprint": {
+        "H1": {
+          "kurt_p99": 0.21,
+          "kurt_max": 405.71,
+          "frac_kurt_gt_0.3": 0.0081,
+          "log10_segvar_std_dex": 0.1723
+        },
+        "L1": {
+          "kurt_p99": 3.986,
+          "kurt_max": 61.38,
+          "frac_kurt_gt_0.3": 0.0163,
+          "log10_segvar_std_dex": 0.1056
+        },
+        "randn_reference": {
+          "kurt_p99": 0.141,
+          "kurt_max": 0.19,
+          "frac_kurt_gt_0.3": 0.0,
+          "log10_segvar_std_dex": 0.0067
+        }
+      },
+      "elapsed_s": 8.461971521377563
+    },
+    {
+      "run": "outputs_rev1/rev1_glitchaug/03B_seed1400_20261023_150009",
+      "npz": "outputs_rev1/probe_figdata/rev1_glitchaug_03B_seed1400.npz",
+      "dataset": "03B",
+      "seed": 1400,
+      "eval_noise_fingerprint": {
+        "H1": {
+          "kurt_p99": 0.185,
+          "kurt_max": 487.47,
+          "frac_kurt_gt_0.3": 0.0081,
+          "log10_segvar_std_dex": 0.0175
+        },
+        "L1": {
+          "kurt_p99": 0.14,
+          "kurt_max": 0.15,
+          "frac_kurt_gt_0.3": 0.0,
+          "log10_segvar_std_dex": 0.0093
+        },
+        "randn_reference": {
+          "kurt_p99": 0.141,
+          "kurt_max": 0.19,
+          "frac_kurt_gt_0.3": 0.0,
+          "log10_segvar_std_dex": 0.0067
+        }
+      },
+      "elapsed_s": 6.011939764022827
+    },
+    {
+      "run": "outputs_rev1/rev1_glitchaug/04A_seed1400_20261023_161327",
+      "npz": "outputs_rev1/probe_figdata/rev1_glitchaug_04A_seed1400.npz",
+      "dataset": "04A",
+      "seed": 1400,
+      "eval_noise_fingerprint": {
+        "H1": {
+          "kurt_p99": 0.123,
+          "kurt_max": 0.14,
+          "frac_kurt_gt_0.3": 0.0,
+          "log10_segvar_std_dex": 0.0082
+        },
+        "L1": {
+          "kurt_p99": 0.128,
+          "kurt_max": 1.52,
+          "frac_kurt_gt_0.3": 0.0041,
+          "log10_segvar_std_dex": 0.0088
+        },
+        "randn_reference": {
+          "kurt_p99": 0.141,
+          "kurt_max": 0.19,
+          "frac_kurt_gt_0.3": 0.0,
+          "log10_segvar_std_dex": 0.0067
+        }
+      },
+      "elapsed_s": 5.986647844314575
+    }
+  ],
+  "single": [
+    "-3.0,0.011",
+    "-3.0,0.05"
+  ],
+  "lo_range": [
+    -4.0,
+    -2.0
+  ],
+  "sampling_stats": {
+    "calls": 18,
+    "min_accept_rate": 0.25,
+    "n_underfilled_obs": 0
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "pp_all": {
+    "ai_log10Omega_max_dev": 0.03200000000000003,
+    "ai_log10Omega_KS_p": 0.25202903151512146,
+    "ai_log10xi_max_dev": 0.03900000000000001,
+    "ai_log10xi_KS_p": 0.057069431990385056,
+    "tr_log10Omega_max_dev": 0.03300000000000003,
+    "tr_log10Omega_KS_p": 0.19349472224712372,
+    "tr_log10xi_max_dev": 0.04500000000000004,
+    "tr_log10xi_KS_p": 0.028138931840658188,
+    "n": 1000
+  },
+  "pp_xi_lt_1e-2": {
+    "ai_log10Omega_max_dev": 0.08700000000000002,
+    "ai_log10Omega_KS_p": 2.4237212414846e-07,
+    "ai_log10xi_max_dev": 0.432,
+    "ai_log10xi_KS_p": 0.0,
+    "tr_log10Omega_max_dev": 0.08799999999999997,
+    "tr_log10Omega_KS_p": 2.4237212414846e-07,
+    "tr_log10xi_max_dev": 0.61,
+    "tr_log10xi_KS_p": 0.0,
+    "n": 1000
+  },
+  "null": {
+    "n_segments": 200,
+    "non_overlapping": true,
+    "kurtosis_abs_median": 0.03957223519682884,
+    "ai_mean": -4.612860202789307,
+    "ai_std": 0.322594553232193,
+    "tr_mean": -4.554938793182373,
+    "tr_std": 0.23301205039024353,
+    "fr_mean": -4.211047172546387,
+    "fr_std": 0.3328450918197632,
+    "dpaired_tr_minus_ai": 0.05792118236422539,
+    "dpaired_tr_minus_ai_ci68": [
+      0.04126690700650215,
+      0.07568924129009247
+    ],
+    "dpaired_tr_minus_ai_p": 0.0015647485852241516,
+    "dpaired_fr_minus_ai": 0.4018128216266632,
+    "dpaired_fr_minus_ai_ci68": [
+      0.3717312812805176,
+      0.4330976605415344
+    ],
+    "dpaired_fr_minus_ai_p": 8.344284678905246e-29,
+    "dpaired_fr_minus_tr": 0.3438916504383087,
+    "dpaired_fr_minus_tr_ci68": [
+      0.3170050382614136,
+      0.37155234813690186
+    ],
+    "dpaired_fr_minus_tr_p": 6.304551895216033e-28
+  },
+  "recovery": {
+    "ai_corr": 0.9253243500973036,
+    "tr_corr": 0.24073762157165682,
+    "log10Omega_range": [
+      -4.0,
+      -2.0
+    ]
+  },
+  "corner": {
+    "xi": 0.05,
+    "log10Omega": -3.0
+  },
+  "sampling_stats": {
+    "calls": 11,
+    "min_accept_rate": 0.125,
+    "n_underfilled_obs": 0
+  }
+}

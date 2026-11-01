@@ -1,0 +1,32 @@
+import sys, time, numpy as np
+sys.path.insert(0, '/root/ingnet-revision/real')
+import option_b_real as ob
+from numpy.random import default_rng
+t=time.time()
+noise = ob.load_eval_noise('O3a'); print('noise', noise.shape, noise.dtype, 'std', noise.std(), 'sigma1', ob._S['sigma1'], 'mode', ob._S['mode'], f'{time.time()-t:.1f}s')
+rng = default_rng(0)
+segs = ob.segments_from_noise(noise, 246, rng); print('segs', segs.shape)
+t=time.time(); f = ob.features(segs); print('features', f.shape, 'mean', f.mean(0).round(3), 'std', f.std(0).round(3), f'{time.time()-t:.2f}s')
+t=time.time(); s1 = ob.inject(segs, -4.5, -3, rng); print('inject', f'{time.time()-t:.2f}s', 'added var', (s1-segs).var(), 'expected Omega sigma1^2 =', 10**-4.5*ob._S['sigma1']**2)
+pi = ob.load_posterior('O3a', 1400, 'ing'); pt = ob.load_posterior('O3a', 1400, 'trad'); print('idx', pi.idx, pt.idx, 'diverged', pi.diverged, pt.diverged)
+t=time.time(); lp = ob.log_prob_grid(pi, f); print('lp ing', lp.shape, f'{time.time()-t:.2f}s', np.isfinite(lp).all())
+t=time.time(); lpt = ob.log_prob_grid(pt, f); print('lp trad', lpt.shape, f'{time.time()-t:.2f}s')
+import torch
+U = ob._S['U']
+th = torch.as_tensor(ob.GRID_POINTS, dtype=torch.float32, device=U.device)
+x = torch.as_tensor(f[:1][:, pi.idx], dtype=torch.float32, device=U.device)
+ref = pi.post.log_prob(th, x=x, norm_posterior=False).cpu().numpy()
+print('max |diff| vs DirectPosterior.log_prob (ING, seg 0):', np.abs(ref - lp[0].ravel()).max())
+c, l = ob.combined_stats(lp, np.arange(246)[:, None]); print('null ING posterior-mean log10Omega: mean %.3f std %.3f (eval_summary null ai_mean -4.868, std 0.224)' % (c.mean(), c.std()))
+c, l = ob.combined_stats(lpt, np.arange(246)[:, None]); print('null Trad: mean %.3f std %.3f (eval_summary tr_mean -4.711, std 0.234)' % (c.mean(), c.std()))
+t=time.time(); syn = ob.synthetic_noise(3000); print('syn', syn.shape, 'std', syn.std(), f'{time.time()-t:.1f}s')
+fs = ob.features(syn[:246]); print('syn noise features mean', fs.mean(0).round(3), 'std', fs.std(0).round(3))
+print('real noise features mean', f.mean(0).round(3), 'std', f.std(0).round(3))
+def log(s): print(s, flush=True)
+t=time.time(); out = ob.run_one(segs, pi, 1e-3, [1, 10], rng, log, R=500); print(f'run_one ING xi=1e-3 N=1,10: {time.time()-t:.1f}s (pipeline results.csv: AI -4.746)')
+t=time.time(); out = ob.run_one(segs, pt, 1e-3, [1, 10], rng, log, R=500); print(f'run_one Trad xi=1e-3 N=1,10: {time.time()-t:.1f}s (pipeline: Trad -3.896)')
+t=time.time(); out = ob.run_one(segs, pi, 1e-2, [1], rng, log, R=500); print(f'run_one ING xi=1e-2 N=1: {time.time()-t:.1f}s (pipeline: AI -4.823)')
+t=time.time(); out = ob.run_one(segs, pt, 1e-2, [1], rng, log, R=500); print(f'run_one Trad xi=1e-2 N=1: {time.time()-t:.1f}s (pipeline: Trad -4.475)')
+t=time.time(); cov = ob.coverage(segs, pi, 1, rng, log, ntrial=100); print(f'coverage N=1 ING: {time.time()-t:.1f}s')
+t=time.time(); cov = ob.coverage(segs, pi, 100, rng, log, ntrial=50); print(f'coverage N=100 ING: {time.time()-t:.1f}s')
+t=time.time(); lp3 = ob.log_prob_grid(pi, ob.features(syn)); idx = ob.stacks(3000, 3000, 2000, rng, True); c, l = ob.combined_stats(lp3, idx); print(f'syn 3000 segs: features+lp+combined_stats(N=3000,R=2000) {time.time()-t:.1f}s')

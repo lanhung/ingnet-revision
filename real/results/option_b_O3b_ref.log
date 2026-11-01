@@ -1,0 +1,41 @@
+[    0.0s] resuming from real/results/option_b_O3b_ref.json
+  [gate] real={'H1': {'psd_20_30_over_200_300': 193.651, 'line60_over_neighbors': 12.818, 'PASS': True}, 'L1': {'psd_20_30_over_200_300': 59.146, 'line60_over_neighbors': 5.759, 'PASS': True}}  randn_ref={'psd_20_30_over_200_300': 0.995, 'line60_over_neighbors': 1.018, 'PASS': False}
+  [train] noise fingerprint H1={'kurt_p99': 0.166, 'kurt_max': 1261.75, 'frac_kurt_gt_0.3': 0.0092, 'log10_segvar_std_dex': 0.0507}
+  [eval] noise fingerprint H1={'kurt_p99': 0.185, 'kurt_max': 487.47, 'frac_kurt_gt_0.3': 0.0081, 'log10_segvar_std_dex': 0.0175}
+[    8.6s] 03B: eval noise (2, 2015232), 246 segments, sigma1 = 40.5339, mode = antenna
+[    8.6s] 03B seed 1400 ing: already done
+[    8.6s] 03B seed 1400 trad: already done
+[    8.6s] 03B seed 1401 ing: already done
+[    8.6s] 03B seed 1401 trad: already done
+[   10.4s] 03B seed 1402 ing: coverage on real noise
+[   12.1s]    coverage N=1: 0.1:0.09 0.2:0.14 0.3:0.27 0.4:0.37 0.5:0.46 0.6:0.58 0.7:0.68 0.8:0.80 0.9:0.91  KS=0.106  bias=-0.031 (|bias| med 0.245)  width=0.391
+[   14.0s]    coverage N=10: 0.1:0.07 0.2:0.14 0.3:0.20 0.4:0.24 0.5:0.30 0.6:0.39 0.7:0.49 0.8:0.58 0.9:0.73  KS=0.134  bias=-0.003 (|bias| med 0.093)  width=0.097
+[   27.0s]    coverage N=100: 0.1:0.06 0.2:0.12 0.3:0.17 0.4:0.20 0.5:0.22 0.6:0.25 0.7:0.34 0.8:0.37 0.9:0.41  KS=0.297  bias=-0.005 (|bias| med 0.064)  width=0.029
+[   27.0s] 03B seed 1402 ing xi=0.001: real noise
+[   29.6s]    N=1      limit combined -4.89  linear -4.79
+[   32.2s]    N=3      limit combined -5.31  linear -5.25
+[   34.9s]    N=10     limit combined -5.61  linear -5.58
+[   37.7s]    N=30     limit combined -5.68  linear -5.85
+[   40.4s]    N=100    limit combined -5.73  linear -5.94
+[   43.2s]    N=246    limit combined -6.01  linear -6.10
+[   49.3s] synthetic noise (10000, 2, 8192) ready
+[   49.3s] 03B seed 1402 ing xi=0.001: synthetic noise (check single-segment coverage first)
+[   50.6s]    coverage N=1: 0.1:0.12 0.2:0.20 0.3:0.28 0.4:0.38 0.5:0.47 0.6:0.60 0.7:0.72 0.8:0.81 0.9:0.90  KS=0.042  bias=-0.015 (|bias| med 0.172)  width=0.350
+[  114.9s]    N=1000   limit combined -5.75  linear -6.31
+[  178.4s]    N=3000   limit combined -5.77  linear -6.45
+[  245.2s]    N=10000  limit combined -5.75  linear -6.68
+[  245.2s] 03B seed 1402 ing xi=0.01: real noise
+[  247.7s]    N=1      limit combined -4.93  linear -4.93
+[  250.4s]    N=3      limit combined -5.08  linear -5.10
+[  253.0s]    N=10     limit combined -5.26  linear -5.29
+[  255.7s]    N=30     limit combined -5.46  linear -5.47
+[  258.3s]    N=100    limit combined -5.67  linear -5.66
+[  261.0s]    N=246    limit combined -5.85  linear -5.83
+[  261.0s] 03B seed 1402 ing xi=0.01: synthetic noise (check single-segment coverage first)
+[  262.3s]    coverage N=1: 0.1:0.12 0.2:0.18 0.3:0.28 0.4:0.40 0.5:0.52 0.6:0.63 0.7:0.74 0.8:0.84 0.9:0.90  KS=0.062  bias=-0.018 (|bias| med 0.141)  width=0.328
+[  325.6s]    N=1000   limit combined -5.93  linear -6.17
+[  389.2s]    N=3000   limit combined -6.20  linear -6.40
+[  449.4s]    N=10000  limit combined -6.20  linear -6.63
+[  449.5s] 03B seed 1402 trad: skipped (diverged in the rev2 pipeline)
+[  449.5s] 03B: gains (median over seed pairs) {"0.001": {"1_combined": 0.69, "1_linear": 0.48, "3_combined": 0.37, "3_linear": 0.41, "10_combined": 0.32, "10_linear": 0.37, "30_combined": 0.39, "30_linear": 0.38, "100_combined": 0.23, "100_linear": 0.32, "246_combined": 0.33, "246_linear": 0.17, "1000_combined": 0.43, "1000_linear": 0.09, "3000_combined": 0.39, "3000_linear": -0.01, "10000_combined": 0.24, "10000_linear": -0.03}, "0.01": {"1_combined": 0.25, "1_linear": 0.26, "3_combined": 0.18, "3_linear": 0.2, "10_combined": 0.02, "10_linear": 0.13, "30_combined": -0.11, "30_linear": 0.04, "100_combined": -0.1, "100_linear": -0.02, "246_combined": 0.05, "246_linear": -0.04, "1000_combined": 0.11, "1000_linear": -0.06, "3000_combined": 0.02, "3000_linear": -0.05, "10000_combined": -0.2, "10000_linear": -0.03}}
+[  449.5s] written real/results/option_b_O3b_ref.json

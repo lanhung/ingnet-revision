@@ -1,0 +1,73 @@
+[    0.0s] resuming from real/results/option_b_O4a_ref.json
+  [gate] real={'H1': {'psd_20_30_over_200_300': 1002.385, 'line60_over_neighbors': 65.012, 'PASS': True}, 'L1': {'psd_20_30_over_200_300': 49.401, 'line60_over_neighbors': 708.672, 'PASS': True}}  randn_ref={'psd_20_30_over_200_300': 0.995, 'line60_over_neighbors': 1.018, 'PASS': False}
+  [train] noise fingerprint H1={'kurt_p99': 0.156, 'kurt_max': 1215.71, 'frac_kurt_gt_0.3': 0.0039, 'log10_segvar_std_dex': 0.0777}
+  [eval] noise fingerprint H1={'kurt_p99': 0.123, 'kurt_max': 0.14, 'frac_kurt_gt_0.3': 0.0, 'log10_segvar_std_dex': 0.0082}
+[    8.6s] 04A: eval noise (2, 2015232), 246 segments, sigma1 = 39.5158, mode = antenna
+[    8.6s] 04A seed 1400 ing: already done
+[    8.6s] 04A seed 1400 trad: already done
+[    8.6s] 04A seed 1401 ing: already done
+[    8.6s] 04A seed 1401 trad: already done
+/root/miniconda3/envs/sgwbpe/lib/python3.11/site-packages/arviz/__init__.py:50: FutureWarning: 
+ArviZ is undergoing a major refactor to improve flexibility and extensibility while maintaining a user-friendly interface.
+Some upcoming changes may be backward incompatible.
+For details and migration guidance, visit: https://python.arviz.org/en/latest/user_guide/migration_guide.html
+  warn(
+[   10.4s] 04A seed 1402 ing: coverage on real noise
+[   12.1s]    coverage N=1: 0.1:0.08 0.2:0.16 0.3:0.27 0.4:0.38 0.5:0.47 0.6:0.60 0.7:0.72 0.8:0.83 0.9:0.91  KS=0.117  bias=-0.032 (|bias| med 0.237)  width=0.375
+[   14.1s]    coverage N=10: 0.1:0.06 0.2:0.12 0.3:0.20 0.4:0.24 0.5:0.34 0.6:0.42 0.7:0.54 0.8:0.59 0.9:0.70  KS=0.132  bias=-0.005 (|bias| med 0.096)  width=0.093
+[   27.0s]    coverage N=100: 0.1:0.07 0.2:0.12 0.3:0.18 0.4:0.23 0.5:0.28 0.6:0.33 0.7:0.38 0.8:0.42 0.9:0.50  KS=0.243  bias=+0.001 (|bias| med 0.056)  width=0.029
+[   27.0s] 04A seed 1402 ing xi=0.001: real noise
+[   29.5s]    N=1      limit combined -4.88  linear -4.77
+[   32.2s]    N=3      limit combined -5.41  linear -5.25
+[   34.9s]    N=10     limit combined -5.66  linear -5.71
+[   37.7s]    N=30     limit combined -5.71  linear -5.85
+[   40.3s]    N=100    limit combined -5.69  linear -5.98
+[   43.2s]    N=246    limit combined -5.64  linear -6.12
+[   49.4s] synthetic noise (10000, 2, 8192) ready
+[   49.4s] 04A seed 1402 ing xi=0.001: synthetic noise (check single-segment coverage first)
+[   50.7s]    coverage N=1: 0.1:0.13 0.2:0.17 0.3:0.28 0.4:0.39 0.5:0.48 0.6:0.62 0.7:0.71 0.8:0.82 0.9:0.91  KS=0.043  bias=-0.005 (|bias| med 0.181)  width=0.347
+[  109.6s]    N=1000   limit combined -5.68  linear -6.33
+[  173.6s]    N=3000   limit combined -5.68  linear -6.46
+[  239.8s]    N=10000  limit combined -5.69  linear -6.69
+[  239.8s] 04A seed 1402 ing xi=0.01: real noise
+[  242.3s]    N=1      limit combined -4.93  linear -4.93
+[  245.0s]    N=3      limit combined -5.13  linear -5.11
+[  247.8s]    N=10     limit combined -5.28  linear -5.30
+[  250.8s]    N=30     limit combined -5.38  linear -5.49
+[  253.5s]    N=100    limit combined -5.57  linear -5.70
+[  256.4s]    N=246    limit combined -5.50  linear -5.84
+[  256.4s] 04A seed 1402 ing xi=0.01: synthetic noise (check single-segment coverage first)
+[  257.8s]    coverage N=1: 0.1:0.12 0.2:0.20 0.3:0.34 0.4:0.41 0.5:0.52 0.6:0.64 0.7:0.76 0.8:0.83 0.9:0.91  KS=0.062  bias=-0.010 (|bias| med 0.141)  width=0.322
+[  318.0s]    N=1000   limit combined -5.20  linear -6.18
+[  381.7s]    N=3000   limit combined -5.21  linear -6.43
+[  443.7s]    N=10000  limit combined -5.22  linear -6.66
+[  443.7s] 04A seed 1402 trad: coverage on real noise
+[  445.1s]    coverage N=1: 0.1:0.12 0.2:0.23 0.3:0.31 0.4:0.40 0.5:0.46 0.6:0.56 0.7:0.66 0.8:0.79 0.9:0.86  KS=0.046  bias=+0.001 (|bias| med 0.182)  width=0.406
+[  447.1s]    coverage N=10: 0.1:0.08 0.2:0.16 0.3:0.24 0.4:0.34 0.5:0.45 0.6:0.56 0.7:0.64 0.8:0.72 0.9:0.81  KS=0.128  bias=-0.019 (|bias| med 0.062)  width=0.084
+[  459.9s]    coverage N=100: 0.1:0.06 0.2:0.12 0.3:0.21 0.4:0.26 0.5:0.29 0.6:0.34 0.7:0.39 0.8:0.45 0.9:0.49  KS=0.313  bias=-0.008 (|bias| med 0.029)  width=0.018
+[  459.9s] 04A seed 1402 trad xi=0.001: real noise
+[  462.5s]    N=1      limit combined -4.00  linear -4.23
+[  465.1s]    N=3      limit combined -4.88  linear -4.80
+[  467.9s]    N=10     limit combined -5.18  linear -5.21
+[  470.8s]    N=30     limit combined -5.42  linear -5.55
+[  473.4s]    N=100    limit combined -5.73  linear -5.68
+[  476.2s]    N=246    limit combined -5.96  linear -5.89
+[  476.2s] 04A seed 1402 trad xi=0.001: synthetic noise (check single-segment coverage first)
+[  477.5s]    coverage N=1: 0.1:0.08 0.2:0.18 0.3:0.29 0.4:0.40 0.5:0.52 0.6:0.61 0.7:0.72 0.8:0.83 0.9:0.92  KS=0.041  bias=-0.012 (|bias| med 0.207)  width=0.727
+[  528.8s]    N=1000   limit combined -6.22  linear -6.21
+[  585.3s]    N=3000   limit combined -6.43  linear -6.46
+[  649.8s]    N=10000  limit combined -6.66  linear -6.71
+[  649.8s] 04A seed 1402 trad xi=0.01: real noise
+[  652.4s]    N=1      limit combined -4.64  linear -4.62
+[  655.0s]    N=3      limit combined -4.90  linear -4.90
+[  657.8s]    N=10     limit combined -5.18  linear -5.18
+[  660.8s]    N=30     limit combined -5.43  linear -5.44
+[  663.5s]    N=100    limit combined -5.79  linear -5.64
+[  666.3s]    N=246    limit combined -5.92  linear -5.82
+[  666.3s] 04A seed 1402 trad xi=0.01: synthetic noise (check single-segment coverage first)
+[  667.7s]    coverage N=1: 0.1:0.12 0.2:0.20 0.3:0.28 0.4:0.36 0.5:0.47 0.6:0.58 0.7:0.71 0.8:0.82 0.9:0.89  KS=0.056  bias=+0.009 (|bias| med 0.165)  width=0.452
+[  725.7s]    N=1000   limit combined -6.19  linear -6.18
+[  775.8s]    N=3000   limit combined -6.36  linear -6.42
+[  825.1s]    N=10000  limit combined -6.59  linear -6.65
+[  825.1s] 04A: gains (median over seed pairs) {"0.001": {"1_combined": 0.88, "1_linear": 0.54, "3_combined": 0.46, "3_linear": 0.45, "10_combined": 0.44, "10_linear": 0.48, "30_combined": 0.37, "30_linear": 0.29, "100_combined": 0.28, "100_linear": 0.29, "246_combined": 0.11, "246_linear": 0.21, "1000_combined": -0.54, "1000_linear": 0.1, "3000_combined": -0.75, "3000_linear": -0.02, "10000_combined": -0.61, "10000_linear": -0.04}, "0.01": {"1_combined": 0.26, "1_linear": 0.3, "3_combined": 0.21, "3_linear": 0.2, "10_combined": 0.09, "10_linear": 0.12, "30_combined": -0.05, "30_linear": 0.02, "100_combined": -0.23, "100_linear": 0.05, "246_combined": -0.33, "246_linear": 0.02, "1000_combined": -0.48, "1000_linear": -0.05, "3000_combined": -0.64, "3000_linear": -0.02, "10000_combined": 0.27, "10000_linear": -0.01}}
+[  825.2s] written real/results/option_b_O4a_ref.json

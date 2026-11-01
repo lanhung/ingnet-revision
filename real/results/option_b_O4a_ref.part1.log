@@ -1,0 +1,129 @@
+  [gate] real={'H1': {'psd_20_30_over_200_300': 1002.385, 'line60_over_neighbors': 65.012, 'PASS': True}, 'L1': {'psd_20_30_over_200_300': 49.401, 'line60_over_neighbors': 708.672, 'PASS': True}}  randn_ref={'psd_20_30_over_200_300': 0.995, 'line60_over_neighbors': 1.018, 'PASS': False}
+  [train] noise fingerprint H1={'kurt_p99': 0.156, 'kurt_max': 1215.71, 'frac_kurt_gt_0.3': 0.0039, 'log10_segvar_std_dex': 0.0777}
+  [eval] noise fingerprint H1={'kurt_p99': 0.123, 'kurt_max': 0.14, 'frac_kurt_gt_0.3': 0.0, 'log10_segvar_std_dex': 0.0082}
+[    9.8s] 04A: eval noise (2, 2015232), 246 segments, sigma1 = 39.5158, mode = antenna
+[   11.5s] 04A seed 1400 ing: coverage on real noise
+[   13.5s]    coverage N=1: 0.1:0.07 0.2:0.17 0.3:0.29 0.4:0.41 0.5:0.50 0.6:0.63 0.7:0.70 0.8:0.81 0.9:0.90  KS=0.071  bias=-0.015 (|bias| med 0.228)  width=0.331
+[   17.4s]    coverage N=10: 0.1:0.07 0.2:0.15 0.3:0.24 0.4:0.29 0.5:0.38 0.6:0.44 0.7:0.52 0.8:0.61 0.9:0.72  KS=0.140  bias=-0.002 (|bias| med 0.104)  width=0.081
+[   51.0s]    coverage N=100: 0.1:0.05 0.2:0.11 0.3:0.15 0.4:0.19 0.5:0.22 0.6:0.27 0.7:0.35 0.8:0.41 0.9:0.46  KS=0.268  bias=+0.004 (|bias| med 0.044)  width=0.028
+[   51.0s] 04A seed 1400 ing xi=0.001: real noise
+[   54.4s]    N=1      limit combined -4.89  linear -4.77
+[   57.4s]    N=3      limit combined -5.29  linear -5.25
+[   60.6s]    N=10     limit combined -5.68  linear -5.69
+[   64.0s]    N=30     limit combined -5.88  linear -5.85
+[   67.2s]    N=100    limit combined -5.96  linear -5.97
+[   70.6s]    N=246    limit combined -6.13  linear -6.08
+[   77.3s] synthetic noise (10000, 2, 8192) ready
+[   77.3s] 04A seed 1400 ing xi=0.001: synthetic noise (check single-segment coverage first)
+[   79.4s]    coverage N=1: 0.1:0.10 0.2:0.19 0.3:0.30 0.4:0.38 0.5:0.49 0.6:0.60 0.7:0.69 0.8:0.81 0.9:0.90  KS=0.053  bias=+0.003 (|bias| med 0.173)  width=0.341
+[  163.9s]    N=1000   limit combined -6.09  linear -6.31
+[  250.6s]    N=3000   limit combined -6.09  linear -6.46
+[  335.6s]    N=10000  limit combined -6.12  linear -6.68
+[  335.6s] 04A seed 1400 ing xi=0.01: real noise
+[  339.3s]    N=1      limit combined -4.90  linear -4.93
+[  342.6s]    N=3      limit combined -5.08  linear -5.10
+[  345.9s]    N=10     limit combined -5.28  linear -5.29
+[  349.7s]    N=30     limit combined -5.43  linear -5.49
+[  353.3s]    N=100    limit combined -5.50  linear -5.70
+[  356.8s]    N=246    limit combined -5.53  linear -5.84
+[  356.8s] 04A seed 1400 ing xi=0.01: synthetic noise (check single-segment coverage first)
+[  359.0s]    coverage N=1: 0.1:0.12 0.2:0.21 0.3:0.30 0.4:0.43 0.5:0.55 0.6:0.64 0.7:0.72 0.8:0.81 0.9:0.91  KS=0.050  bias=-0.001 (|bias| med 0.152)  width=0.311
+[  442.6s]    N=1000   limit combined -5.75  linear -6.18
+[  524.7s]    N=3000   limit combined -5.82  linear -6.40
+[  605.8s]    N=10000  limit combined -5.97  linear -6.66
+[  605.8s] 04A seed 1400 trad: coverage on real noise
+[  608.8s]    coverage N=1: 0.1:0.17 0.2:0.27 0.3:0.35 0.4:0.41 0.5:0.48 0.6:0.58 0.7:0.68 0.8:0.80 0.9:0.89  KS=0.053  bias=+0.013 (|bias| med 0.204)  width=0.353
+[  612.8s]    coverage N=10: 0.1:0.10 0.2:0.18 0.3:0.26 0.4:0.38 0.5:0.46 0.6:0.54 0.7:0.61 0.8:0.69 0.9:0.79  KS=0.097  bias=-0.002 (|bias| med 0.065)  width=0.088
+[  636.1s]    coverage N=100: 0.1:0.07 0.2:0.14 0.3:0.20 0.4:0.24 0.5:0.27 0.6:0.32 0.7:0.36 0.8:0.42 0.9:0.51  KS=0.356  bias=+0.013 (|bias| med 0.038)  width=0.024
+[  636.1s] 04A seed 1400 trad xi=0.001: real noise
+[  639.6s]    N=1      limit combined -4.00  linear -4.23
+[  643.2s]    N=3      limit combined -4.88  linear -4.91
+[  646.6s]    N=10     limit combined -5.25  linear -5.21
+[  649.8s]    N=30     limit combined -5.37  linear -5.56
+[  652.7s]    N=100    limit combined -5.67  linear -5.68
+[  655.8s]    N=246    limit combined -5.87  linear -5.95
+[  655.8s] 04A seed 1400 trad xi=0.001: synthetic noise (check single-segment coverage first)
+[  660.3s]    coverage N=1: 0.1:0.08 0.2:0.20 0.3:0.29 0.4:0.43 0.5:0.55 0.6:0.64 0.7:0.71 0.8:0.84 0.9:0.92  KS=0.054  bias=+0.015 (|bias| med 0.205)  width=0.788
+[  741.3s]    N=1000   limit combined -6.21  linear -6.21
+[  821.6s]    N=3000   limit combined -6.47  linear -6.49
+[  900.0s]    N=10000  limit combined -5.72  linear -6.74
+[  900.0s] 04A seed 1400 trad xi=0.01: real noise
+[  903.6s]    N=1      limit combined -4.64  linear -4.61
+[  907.5s]    N=3      limit combined -4.89  linear -4.91
+[  911.4s]    N=10     limit combined -5.18  linear -5.20
+[  915.2s]    N=30     limit combined -5.50  linear -5.46
+[  918.7s]    N=100    limit combined -5.72  linear -5.68
+[  922.6s]    N=246    limit combined -5.86  linear -5.83
+[  922.6s] 04A seed 1400 trad xi=0.01: synthetic noise (check single-segment coverage first)
+[  925.1s]    coverage N=1: 0.1:0.09 0.2:0.21 0.3:0.30 0.4:0.41 0.5:0.49 0.6:0.61 0.7:0.74 0.8:0.82 0.9:0.90  KS=0.068  bias=+0.028 (|bias| med 0.168)  width=0.379
+[ 1004.9s]    N=1000   limit combined -6.22  linear -6.25
+[ 1087.2s]    N=3000   limit combined -6.46  linear -6.46
+[ 1169.9s]    N=10000  limit combined -5.71  linear -6.68
+[ 1170.2s] 04A seed 1401 ing: coverage on real noise
+[ 1175.6s]    coverage N=1: 0.1:0.12 0.2:0.23 0.3:0.33 0.4:0.42 0.5:0.54 0.6:0.65 0.7:0.74 0.8:0.83 0.9:0.91  KS=0.058  bias=-0.024 (|bias| med 0.167)  width=0.413
+[ 1179.9s]    coverage N=10: 0.1:0.09 0.2:0.15 0.3:0.26 0.4:0.30 0.5:0.43 0.6:0.52 0.7:0.59 0.8:0.71 0.9:0.81  KS=0.075  bias=-0.005 (|bias| med 0.097)  width=0.128
+[ 1201.9s]    coverage N=100: 0.1:0.01 0.2:0.07 0.3:0.10 0.4:0.14 0.5:0.21 0.6:0.28 0.7:0.33 0.8:0.37 0.9:0.43  KS=0.287  bias=-0.008 (|bias| med 0.066)  width=0.034
+[ 1201.9s] 04A seed 1401 ing xi=0.001: real noise
+[ 1205.6s]    N=1      limit combined -4.84  linear -5.00
+[ 1209.2s]    N=3      limit combined -5.27  linear -5.25
+[ 1212.9s]    N=10     limit combined -5.39  linear -5.58
+[ 1216.7s]    N=30     limit combined -5.43  linear -5.78
+[ 1219.7s]    N=100    limit combined -5.42  linear -6.00
+[ 1222.8s]    N=246    limit combined -5.48  linear -6.09
+[ 1222.8s] 04A seed 1401 ing xi=0.001: synthetic noise (check single-segment coverage first)
+[ 1226.8s]    coverage N=1: 0.1:0.11 0.2:0.18 0.3:0.28 0.4:0.33 0.5:0.46 0.6:0.54 0.7:0.67 0.8:0.77 0.9:0.90  KS=0.055  bias=-0.017 (|bias| med 0.168)  width=0.360
+[ 1305.6s]    N=1000   limit combined -5.45  linear -6.32
+[ 1385.0s]    N=3000   limit combined -5.44  linear -6.44
+[ 1465.1s]    N=10000  limit combined -5.45  linear -6.68
+[ 1465.1s] 04A seed 1401 ing xi=0.01: real noise
+[ 1468.5s]    N=1      limit combined -4.97  linear -4.96
+[ 1472.4s]    N=3      limit combined -5.08  linear -5.12
+[ 1476.5s]    N=10     limit combined -5.21  linear -5.33
+[ 1480.7s]    N=30     limit combined -5.46  linear -5.50
+[ 1484.7s]    N=100    limit combined -5.67  linear -5.73
+[ 1488.5s]    N=246    limit combined -5.88  linear -5.88
+[ 1488.5s] 04A seed 1401 ing xi=0.01: synthetic noise (check single-segment coverage first)
+[ 1492.0s]    coverage N=1: 0.1:0.10 0.2:0.18 0.3:0.32 0.4:0.44 0.5:0.55 0.6:0.62 0.7:0.69 0.8:0.81 0.9:0.90  KS=0.042  bias=-0.031 (|bias| med 0.193)  width=0.390
+[ 1567.7s]    N=1000   limit combined -6.21  linear -6.21
+[ 1647.0s]    N=3000   limit combined -6.47  linear -6.46
+[ 1724.8s]    N=10000  limit combined -6.66  linear -6.69
+[ 1724.8s] 04A seed 1401 trad: coverage on real noise
+[ 1730.3s]    coverage N=1: 0.1:0.09 0.2:0.19 0.3:0.30 0.4:0.41 0.5:0.49 0.6:0.58 0.7:0.68 0.8:0.78 0.9:0.88  KS=0.042  bias=-0.003 (|bias| med 0.228)  width=0.717
+[ 1738.0s]    coverage N=10: 0.1:0.09 0.2:0.18 0.3:0.26 0.4:0.34 0.5:0.43 0.6:0.51 0.7:0.61 0.8:0.70 0.9:0.78  KS=0.071  bias=-0.010 (|bias| med 0.096)  width=0.093
+[ 1759.1s]    coverage N=100: 0.1:0.04 0.2:0.12 0.3:0.18 0.4:0.26 0.5:0.28 0.6:0.34 0.7:0.39 0.8:0.51 0.9:0.56  KS=0.263  bias=-0.008 (|bias| med 0.041)  width=0.031
+[ 1759.1s] 04A seed 1401 trad xi=0.001: real noise
+[ 1762.6s]    N=1      limit combined -4.20  linear -4.25
+[ 1766.5s]    N=3      limit combined -4.81  linear -4.79
+[ 1770.1s]    N=10     limit combined -4.96  linear -5.25
+[ 1773.7s]    N=30     limit combined -5.07  linear -5.50
+[ 1777.3s]    N=100    limit combined -5.14  linear -5.75
+[ 1780.7s]    N=246    limit combined -5.37  linear -5.88
+[ 1780.7s] 04A seed 1401 trad xi=0.001: synthetic noise (check single-segment coverage first)
+[ 1782.7s]    coverage N=1: 0.1:0.07 0.2:0.17 0.3:0.30 0.4:0.41 0.5:0.48 0.6:0.58 0.7:0.69 0.8:0.78 0.9:0.89  KS=0.084  bias=-0.018 (|bias| med 0.201)  width=0.999
+[ 1861.6s]    N=1000   limit combined -6.23  linear -6.23
+[ 1942.6s]    N=3000   limit combined -6.41  linear -6.46
+[ 2011.8s]    N=10000  limit combined -6.06  linear -6.71
+[ 2011.8s] 04A seed 1401 trad xi=0.01: real noise
+[ 2014.9s]    N=1      limit combined -4.76  linear -4.73
+[ 2017.9s]    N=3      limit combined -4.87  linear -4.93
+[ 2021.0s]    N=10     limit combined -5.15  linear -5.21
+[ 2024.1s]    N=30     limit combined -5.37  linear -5.50
+[ 2027.2s]    N=100    limit combined -5.65  linear -5.68
+[ 2030.2s]    N=246    limit combined -5.83  linear -5.85
+[ 2030.2s] 04A seed 1401 trad xi=0.01: synthetic noise (check single-segment coverage first)
+[ 2031.8s]    coverage N=1: 0.1:0.10 0.2:0.21 0.3:0.30 0.4:0.41 0.5:0.52 0.6:0.66 0.7:0.76 0.8:0.85 0.9:0.92  KS=0.042  bias=-0.014 (|bias| med 0.206)  width=0.777
+[ 2101.4s]    N=1000   limit combined -6.25  linear -6.27
+[ 2175.2s]    N=3000   limit combined -6.42  linear -6.48
+[ 2248.1s]    N=10000  limit combined -6.07  linear -6.70
+[ 2248.2s] 04A seed 1402 ing: coverage on real noise
+[ 2249.5s]    coverage N=1: 0.1:0.11 0.2:0.19 0.3:0.27 0.4:0.42 0.5:0.53 0.6:0.64 0.7:0.69 0.8:0.80 0.9:0.91  KS=0.041  bias=-0.009 (|bias| med 0.194)  width=0.340
+[ 2251.5s]    coverage N=10: 0.1:0.06 0.2:0.12 0.3:0.18 0.4:0.24 0.5:0.32 0.6:0.42 0.7:0.51 0.8:0.61 0.9:0.73  KS=0.185  bias=+0.005 (|bias| med 0.074)  width=0.081
+[ 2264.7s]    coverage N=100: 0.1:0.05 0.2:0.10 0.3:0.14 0.4:0.20 0.5:0.25 0.6:0.28 0.7:0.35 0.8:0.41 0.9:0.52  KS=0.254  bias=+0.004 (|bias| med 0.060)  width=0.027
+[ 2264.7s] 04A seed 1402 ing xi=0.001: real noise
+[ 2267.2s]    N=1      limit combined -4.75  linear -4.88
+[ 2269.9s]    N=3      limit combined -5.39  linear -5.41
+[ 2272.6s]    N=10     limit combined -5.63  linear -5.64
+[ 2275.4s]    N=30     limit combined -5.64  linear -5.84
+[ 2278.2s]    N=100    limit combined -5.62  linear -5.97
+[ 2281.1s]    N=246    limit combined -5.66  linear -6.11
+[ 2281.1s] 04A seed 1402 ing xi=0.001: synthetic noise (check single-segment coverage first)

@@ -1,0 +1,44 @@
+  [gate] real={'H1': {'psd_20_30_over_200_300': 888.143, 'line60_over_neighbors': 1.749, 'PASS': True}, 'L1': {'psd_20_30_over_200_300': 53.508, 'line60_over_neighbors': 2.965, 'PASS': True}}  randn_ref={'psd_20_30_over_200_300': 0.995, 'line60_over_neighbors': 1.018, 'PASS': False}
+  [train] noise fingerprint H1={'kurt_p99': 0.183, 'kurt_max': 1886.87, 'frac_kurt_gt_0.3': 0.0039, 'log10_segvar_std_dex': 0.0516}
+  [eval] noise fingerprint H1={'kurt_p99': 0.21, 'kurt_max': 405.71, 'frac_kurt_gt_0.3': 0.0081, 'log10_segvar_std_dex': 0.1723}
+[    9.8s] grid: 71 points, step 0.100 dex
+[   10.0s] ing nO=71: N=246 noise-only product posterior: median max-cell weight 0.48, median std 0.078 dex
+[   10.0s] ing nO=71 xi=0.001
+[   13.1s]    N=30     limit combined -5.71  linear -5.76
+[   15.7s]    N=100    limit combined -5.85  linear -5.93
+[   18.6s]    N=246    limit combined -5.79  linear -6.06
+[   18.6s] ing nO=71 xi=0.01
+[   21.4s]    N=30     limit combined -5.18  linear -5.40
+[   24.0s]    N=100    limit combined -5.24  linear -5.57
+[   26.7s]    N=246    limit combined -5.26  linear -5.78
+[   26.8s] grid: 351 points, step 0.020 dex
+[   27.0s] ing nO=351: N=246 noise-only product posterior: median max-cell weight 0.11, median std 0.079 dex
+[   27.0s] ing nO=351 xi=0.001
+[   38.6s]    N=30     limit combined -5.71  linear -5.76
+[   50.2s]    N=100    limit combined -5.85  linear -5.93
+[   62.5s]    N=246    limit combined -5.79  linear -6.06
+[   62.5s] ing nO=351 xi=0.01
+[   74.1s]    N=30     limit combined -5.18  linear -5.40
+[   85.5s]    N=100    limit combined -5.24  linear -5.57
+[   97.7s]    N=246    limit combined -5.26  linear -5.78
+[   97.8s] grid: 71 points, step 0.100 dex
+[   97.8s] trad nO=71: N=246 noise-only product posterior: median max-cell weight 0.83, median std 0.038 dex
+[   97.8s] trad nO=71 xi=0.001
+[  100.7s]    N=30     limit combined -5.34  linear -5.39
+[  103.4s]    N=100    limit combined -5.47  linear -5.60
+[  106.1s]    N=246    limit combined -5.54  linear -5.77
+[  106.1s] trad nO=71 xi=0.01
+[  109.0s]    N=30     limit combined -5.17  linear -5.28
+[  111.7s]    N=100    limit combined -5.36  linear -5.50
+[  114.4s]    N=246    limit combined -5.50  linear -5.71
+[  114.5s] grid: 351 points, step 0.020 dex
+[  114.7s] trad nO=351: N=246 noise-only product posterior: median max-cell weight 0.28, median std 0.029 dex
+[  114.7s] trad nO=351 xi=0.001
+[  125.7s]    N=30     limit combined -5.34  linear -5.39
+[  137.1s]    N=100    limit combined -5.47  linear -5.60
+[  149.3s]    N=246    limit combined -5.54  linear -5.77
+[  149.3s] trad nO=351 xi=0.01
+[  160.2s]    N=30     limit combined -5.17  linear -5.28
+[  171.6s]    N=100    limit combined -5.36  linear -5.50
+[  183.6s]    N=246    limit combined -5.45  linear -5.71
+[  183.6s] done
